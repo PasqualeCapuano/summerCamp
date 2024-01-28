@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/components/contacts.dart';
 import 'package:portfolio/components/homepage.dart';
 import 'package:portfolio/components/profile.dart';
+import 'package:portfolio/components/test.dart';
 
 
 class DrawerList extends StatelessWidget {
@@ -73,6 +74,27 @@ class DrawerList extends StatelessWidget {
                       child: FaIcon(FontAwesomeIcons.user, color: Colors.white),
                       ),
                     Text('Profile', style: TextStyle(color: Colors.white, fontSize: 22)),
+                  ],
+                ),
+              )
+          ),
+          Padding(
+              padding: EdgeInsets.only(bottom: 16.0),
+              child: FilledButton(
+                onPressed: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Test()),
+                  );
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [ 
+                    Padding(
+                      padding: EdgeInsets.only(right: 8.0),
+                      child: FaIcon(FontAwesomeIcons.question, color: Colors.white),
+                      ),
+                    Text('Test', style: TextStyle(color: Colors.white, fontSize: 22)),
                   ],
                 ),
               )
