@@ -19,6 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       drawer: Container(
         color: Theme.of(context).colorScheme.primary,
+        width: 350,
         child: const SafeArea(
           child: Column(
             children: [
